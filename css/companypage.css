@@ -2,6 +2,9 @@
     margin: 0;
     padding:0;
 }
+a{
+    text-decoration: none;
+}
 nav{
     width: 1495px;
     height: 73px;
@@ -127,4 +130,141 @@ nav img{
 #module-background3:hover{
     background: url("../img/变色3.png");
 }
-
+#news{
+    clear: both;
+    width: 100%;
+    min-width: 1495px;
+    margin: 240px auto 0 auto;
+}
+#news-introduce{
+    width:1000px;
+    margin: 40px auto;
+}
+#news-introduce img{
+    display: block;
+    width: 320px;
+    height: 200px;
+}
+#news-introduce p{
+    width: 320px;
+}
+#news-introduce a{
+    color: rgb(51,51,51);
+}
+.news-left,.news-title,.news-right {
+    margin-top: 16px;
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    color: rgb(51, 51, 51);
+    text-align: left;
+}
+.news-left{
+    width:333px;
+    float: left;
+}
+.news-middle{
+    width:333px;
+    float: left;
+    margin: 16px auto 0 auto;
+}
+.news-right{
+    width:333px;
+    float: right;
+}
+.news-text{
+    margin-top: 8px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    font-family: "Microsoft YaHei";
+    color: rgb(51, 51, 51);
+    text-align: left;
+}
+.news-date{
+    margin-top: 33px;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    color: rgb(51, 51, 51);
+    text-align: left;
+}
+.value{
+    padding-top: 80px;
+    width: 100%;
+    min-width: 1495px;
+    display: block;
+}
+#about{
+    margin: 60px auto 0 auto;
+    width: 100%;
+    min-width: 1495px;
+}
+#about p{
+    height: 27px;
+    line-height: 27px;
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+    color: #333333;
+}
+#bottom-nav{
+    margin: 26px auto;
+    width: 1495px;
+    height: auto;
+}
+.first-ul{
+    list-style: none;
+    margin-left: 20px;
+    float: left;
+    display: block;
+}
+.first-ul>li{
+    width: 115px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    float: left;
+    text-align: left;
+    display: block;
+}
+.second-ul{
+    list-style: none;
+    display: block;
+}
+.second-ul>li a{
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    color: rgb(136, 136, 136);
+    font-weight: normal;
+}
+#address{
+    float: right;
+    margin-right: 25px;
+    text-align: left;
+}
+#address p{
+    height: 27px;
+    line-height: 27px;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    color: rgb(136, 136, 136);
+    font-weight: normal;
+}
+footer{
+    width: 100%;
+    min-width: 1495px;
+    height: 67px;
+    margin-top: 45px;
+    background: #000000;
+}
+footer p{
+    width: 1000px;
+    height: 67px;
+    line-height: 67px;
+    text-align: center;
+    color: #ffffff;
+    margin: 0 auto;
+}
