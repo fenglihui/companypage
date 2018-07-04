@@ -6,7 +6,7 @@ a{
     text-decoration: none;
 }
 nav{
-    width: 1495px;
+    width: 1200px;
     height: 73px;
     margin:0 auto;
 }
@@ -16,6 +16,7 @@ nav img{
     display: block;
     float: left;
     margin-top:18px;
+    margin-left: 30px;
 }
 #nav{
     float: right;
@@ -43,7 +44,7 @@ nav img{
 }
 #carousel{
     width: 100%;
-    min-width: 1495px;
+    min-width: 1200px;
     height: 589px;
     position: relative;
 }
@@ -85,7 +86,7 @@ nav img{
 }
 #industry{
     margin-top: 60px;
-    min-width: 1495px;
+    min-width: 1200px;
     position: relative;
 }
 .title{
@@ -95,12 +96,12 @@ nav img{
 .background{
     margin-top: 40px;
     width: 100%;
-    min-width:1495px;
+    min-width:1200px;
     display: block;
 }
 .module{
     position: absolute;
-    top: 330px;
+    top: 80%;
     left: 50%;
     margin-left:-500px;
     z-index: 5;
@@ -133,7 +134,7 @@ nav img{
 #news{
     clear: both;
     width: 100%;
-    min-width: 1495px;
+    min-width: 1200px;
     margin: 240px auto 0 auto;
 }
 #news-introduce{
@@ -190,13 +191,13 @@ nav img{
 .value{
     padding-top: 80px;
     width: 100%;
-    min-width: 1495px;
+    min-width: 1200px;
     display: block;
 }
 #about{
     margin: 60px auto 0 auto;
     width: 100%;
-    min-width: 1495px;
+    min-width: 1200px;
 }
 #about p{
     height: 27px;
@@ -209,7 +210,7 @@ nav img{
 }
 #bottom-nav{
     margin: 26px auto;
-    width: 1495px;
+    width: 1200px;
     height: auto;
 }
 .first-ul{
@@ -242,7 +243,7 @@ nav img{
 }
 #address{
     float: right;
-    margin-right: 25px;
+    margin-right: 10px;
     text-align: left;
 }
 #address p{
@@ -255,7 +256,7 @@ nav img{
 }
 footer{
     width: 100%;
-    min-width: 1495px;
+    min-width: 1200px;
     height: 67px;
     margin-top: 45px;
     background: #000000;

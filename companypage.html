@@ -5,6 +5,8 @@
     <title>四川慧威仕科技有限公司</title>
     <link rel="stylesheet" type="text/css" href="css/companypage.css">
     <link rel="stylesheet" href="css/shutter.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/superslide.2.1.js"></script>
 </head>
 <body>
 <nav>
@@ -18,22 +20,24 @@
         <li><a href="#">合作</a></li>
     </ul>
 </nav>
-<div class="shutter">
-    <div class="shutter-img">
-        <a href="#" ><img src="img/轮播图片1.png" alt="#"></a>
-        <a href="#"><img src="img/banner1.png" alt="#"></a>
-        <a href="#"><img src="img/banner2.png" alt="#"></a>
+<div class="fullSlide">
+    <div class="bd">
+        <ul>
+            <li _src="url(img/轮播图片1.png)" style="background:#E2025E center 0 no-repeat;"><a href="#"></a></li>
+            <li _src="url(img/banner1.png)" style="background:#DED5A1 center 0 no-repeat;"><a href="#"></a></li>
+            <li _src="url(img/banner2.png)" style="background:#B8CED1 center 0 no-repeat;"><a href="#"></a></li>
+
+        </ul>
     </div>
-    <ul class="shutter-btn">
-        <li class="prev"></li>
-        <li class="next"></li>
-    </ul>
-</div>
+    <div class="hd"><ul></ul></div>
+    <span class="prev"></span>
+    <span class="next"></span>
+</div><!--fullSlide end-->
 <div id="industry">
     <img class="title" src="img/产业标题.png">
     <img class="background" src="img/集团大图.png">
     <div class="module">
-        <div id="module-background1" class="module-background"><a href="http://www.baidu.com" style="display: block;height: 100%"></a></div>
+        <div id="module-background1" class="module-background"><a href="#" style="display: block;height: 100%"></a></div>
         <div id="module-background2" class="module-background"><a href="#" style="display: block;height: 100%"></a></div>
         <div id="module-background3" class="module-background"><a href="#" style="display: block;height: 100%"></a></div>
     </div>
@@ -69,7 +73,7 @@
         真正助力中国产业的转型与消费升级</p>
     <a style="display:block;width: 139px;height: 37px;margin: 65px auto 0 auto" href="#"><img style="display: block;" src="img/按钮.png"></a>
 </div>
-<img src="img/横线.png" style="display:block;margin-top: 38px;width: 100%;min-width: 1495px">
+<img src="img/横线.png" style="display:block;margin-top: 38px;width: 100%;min-width: 1200px">
 <div id="bottom-nav">
     <ul class="first-ul">
         <li>首页</li>
@@ -123,23 +127,26 @@
 <footer>
     <p>©2018 某某集团版权所有</p>
 </footer>
-<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
-<script src="js/velocity.js"></script>
-<script src="js/shutter.js"></script>
-<script>
-    $(function () {
-        var window_width= $(window).width();
-        $(window).resize(function() {
-            window_width = $(window).width();
+<script type="text/javascript">
+    $(".fullSlide").hover(function(){
+            $(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.5)
+        },
+        function(){
+            $(this).find(".prev,.next").fadeOut()
         });
-        $('.shutter').shutter({
-            shutterW: window_width,
-            shutterH: 598, // 容器高度
-            isAutoPlay: true, // 是否自动播放
-            playInterval: 3000, // 自动播放时间
-            curDisplay: 3, // 当前显示页
-            fullPage: false // 是否全屏展示
-        });
+    $(".fullSlide").slide({
+        titCell: ".hd ul",
+        mainCell: ".bd ul",
+        effect: "fold",
+        autoPlay: true,
+        autoPage: true,
+        trigger: "click",
+        startFun: function(i) {
+            var curLi = jQuery(".fullSlide .bd li").eq(i);
+            if ( !! curLi.attr("_src")) {
+                curLi.css("background-image", curLi.attr("_src")).removeAttr("_src")
+            }
+        }
     });
 </script>
 </body>
