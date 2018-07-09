@@ -14,7 +14,7 @@
     <ul id="nav">
         <li><a href="companypage.html">首页</a></li>
         <li><a href="companyprofile.html">关于</a></li>
-        <li><a href="#">产业</a></li>
+        <li><a href="companyproject.html">产业</a></li>
         <li><a href="#">文化</a></li>
         <li><a href="#">人才</a></li>
         <li><a href="#">合作</a></li>
@@ -38,9 +38,32 @@
     <img class="title" src="img/标题横线.png">
     <img class="background" src="img/集团大图.png">
     <div class="module">
-        <div id="module-background1" class="module-background"><a href="#" style="display: block;height: 100%"></a></div>
-        <div id="module-background2" class="module-background"><a href="#" style="display: block;height: 100%"></a></div>
-        <div id="module-background3" class="module-background"><a href="#" style="display: block;height: 100%"></a></div>
+        <div id="module-background1" class="module-background">
+            <div id="text-introduce1" class="module-background text-position" style="display:none;background: #233776;">
+                <p style="margin: 15px auto;text-align: center;font-size: 16px">科技服务领域</p>
+                <p style="margin: 0 15px;text-align: center">提供系统集成、软件开发服务、智慧设备研发等，
+                    公司核心团队先后参与了国内首家酒类RFID追溯平台的研发和运营、中国物流工业4.0供应链管理系统设计、西藏地区食品安全追溯平台技术搭建。
+                </p>
+            </div>
+        </div>
+        <div id="module-background2" class="module-background">
+            <div id="text-introduce2" class="module-background text-position" style="display:none;background: #233776;">
+                <p style="margin: 15px auto;text-align: center;font-size: 16px">广告传媒领域</p>
+                <p style="margin: 0 15px;text-align: center">聚合平面广告、新媒体、电视媒体、明星资源等多种广告服务形式，团队先后策划运营《CCTV食品产业报道》栏目，
+                    拍摄制作茅台集团大型电视纪录片《匠心·匠韵》、潭酒集团专题片、宣传片，
+                    与CCTV-AAAA级代理公司及国内时尚大牌杂志《玩趣天下》保持良好的合作关系，目前正在全力打造国内首家以食品安全为主题的专业全媒体矩阵平台《慧食中国》。
+                </p>
+            </div>
+        </div>
+        <div id="module-background3" class="module-background">
+            <div id="text-introduce3" class="module-background text-position" style="display:none;background: #233776;">
+                <p style="margin: 15px auto;text-align: center;font-size: 16px">检测及计量领域</p>
+                <p style="margin: 0 15px;text-align: center">参股合作多家国内检测机构，能提供食品检测、环境检测以及快速检测等服务。
+                    其中公司基于国家“一带一路”战略，设立慧威仕科技集团（老挝）有限公司，与老挝国家科技部联合投资运营“中国-老挝国家计量项目”。
+                </p>
+            </div>
+        </div>
+
     </div>
 </div>
 <div id="news">
@@ -65,7 +88,9 @@
             <p class="news-text"><a href="#">2025年中国体育产业总产值将达5万亿元，市场潜力巨大，资本迅速涌向中国体育产业...</a></p>
             <p class="news-date"><a href="#">2017-07-21</a></p>
         </div>
+        <div class="clear"></div>
     </div>
+    <a class="about" style="display:block;width: 139px;height: 37px;margin: 65px auto 0 auto" href="companyprofile.html"><img style="display: block;" src="img/按钮.png"></a>
 </div>
 <img  class="value" src="img/块3-价值观.png">
 <div id="about">
@@ -123,7 +148,7 @@
         </li>
         <li>产业
             <ul class="second-ul">
-                <li><a href="#">互联网+</a></li>
+                <li><a href="companyproject.html#internet">互联网+</a></li>
                 <li><a href="#">文化传媒</a></li>
                 <li><a href="#">检测计量</a></li>
             </ul>
@@ -183,6 +208,28 @@
                 curLi.css("background-image", curLi.attr("_src")).removeAttr("_src")
             }
         }
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $("#module-background1").mouseover(function(){
+            $("#text-introduce1").slideDown(300);
+        });
+        $("#text-introduce1").mouseout(function(){
+            $("#text-introduce1").slideUp(300);
+        });
+        $("#module-background2").mouseover(function(){
+            $("#text-introduce2").slideDown(300);
+        });
+        $("#text-introduce2").mouseout(function(){
+            $("#text-introduce2").slideUp(300);
+        });
+        $("#module-background3").mouseover(function(){
+            $("#text-introduce3").slideDown(300);
+        });
+        $("#text-introduce3").mouseout(function(){
+            $("#text-introduce3").slideUp(300);
+        });
     });
 </script>
 </body>
