@@ -139,20 +139,46 @@ nav img{
 }
 .text-position{
     position:absolute;
-    top: 0;
+    top: -100%;
     left: 0;
 }
 #module-background1{
     position: relative;
+    overflow: hidden;
     background: url("../img/整体背景图.png");
 }
 #module-background2{
     position: relative;
+    overflow: hidden;
     background: url("../img/整体背景图2.png");
 }
 #module-background3{
     position: relative;
+    overflow: hidden;
     background: url("../img/整体背景图3.png");
+}
+#module-background1:hover .text-position,#module-background2:hover .text-position,#module-background3:hover .text-position{
+    animation: textslide 1s;
+    -moz-animation: textslide 1s;	/* Firefox */
+    -webkit-animation: textslide 1s;	/* Safari 和 Chrome */
+    -o-animation: textslide 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes textslide{
+    0% {top: -100%;}
+    100% {top: 0;}
+}
+@-moz-keyframes textslide{
+    0% {top: -100%;}
+    100% {top: 0;}
+}
+@-webkit-keyframes textslide{
+    0% {top: -100%;}
+    100% {top: 0;}
+}
+@-o-keyframes textslide{
+    0% {top: -100%;}
+    100% {top: 0;}
 }
 #news{
     clear: both;
@@ -189,7 +215,6 @@ nav img{
 .news-middle{
     width:333px;
     float: left;
-    margin: 16px auto 0 auto;
 }
 .news-right{
     width:333px;
