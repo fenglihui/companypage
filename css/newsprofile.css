@@ -30,3 +30,26 @@ a{
     font-family:'Microsoft YaHei';
     color: #333333;
 }
+.job{
+    width: 100%;
+    margin-bottom: 60px;
+    position: relative;
+}
+.job img{
+    margin-top: 10px;
+    margin-right: 8px;
+    float: left;
+}
+.job-name{
+    float: left;
+    font-size: 22px;
+    font-family:'Microsoft YaHei';
+    color: #e80a41;
+}
+.job-text{
+    margin-top: 25px;
+    line-height: 2;
+    font-size: 16px;
+    font-family:'Microsoft YaHei';
+    color: #333333;
+}
