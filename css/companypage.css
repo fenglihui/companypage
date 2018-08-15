@@ -141,6 +141,7 @@ nav img{
     position:absolute;
     top: -100%;
     left: 0;
+    cursor: pointer;
 }
 #module-background1{
     position: relative;
@@ -357,4 +358,8 @@ footer p{
     text-align: center;
     color: #ffffff;
     margin: 0 auto;
+}
+footer p{
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
 }
