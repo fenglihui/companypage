@@ -5,26 +5,27 @@
     <link rel="stylesheet" href="css/companypage.css">
     <link rel="stylesheet" href="css/newsprofile.css">
     <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="js/jquery.lazyload.js"></script>
     <title>新闻内容</title>
 </head>
 <body>
 <nav>
-    <img src="img/慧威仕logo.png">
+    <img class="lazy" data-original="img/慧威仕logo.png">
     <ul id="nav">
         <li><a href="companypage.html">首页</a></li>
         <li><a href="companyprofile.html">关于</a></li>
         <li><a href="companypage.html#industry">产业</a></li>
-        <li><a href="#">文化</a></li>
+        <li><a href="companycase.html">案例</a></li>
         <li><a href="companyjob.html">人才</a></li>
         <li><a href="companypage.html#cooperation">合作</a></li>
     </ul>
 </nav>
-<img src="img/project/projectbanner.png" style="width: 100%;min-width: 1200px;display: block;">
+<img class="lazy" data-original="img/project/projectbanner.png" style="width: 100%;min-width: 1200px;display: block;">
 <div id="internet" class="profile">
     <p style="font-size: 32px;font-family:'Microsoft YaHei';color: #233776;float: left;margin-left: 30px">新闻</p>
     <p style="float: right;font-size: 16px;margin: 16px 30px 0 0;font-family:'Microsoft YaHei'"><a href="companypage.html"><span>首页</span></a><span>&gt</span><a href="companynews.html"><span>新闻</span></a><span>&gt</span><span>内容</span></p>
     <div class="clear"></div>
-    <img src="img/横线.png" style="display:block;margin-top: 28px;width: 100%;min-width: 1200px;height: 1px;background: #cccccc">
+    <img class="lazy" data-original="img/横线.png" style="display:block;margin-top: 28px;width: 100%;min-width: 1200px;height: 1px;background: #cccccc">
     <div class="news-profile" style="width: 1140px">
         <div class="news-title">在老挝首都万象签署谅解备忘录</div>
         <img src="img/news/老挝.jpg" style="width:346px;height: 259px;float: right;display: block;margin-left: 40px">
@@ -37,5 +38,10 @@
 <footer style="margin-top: 245px">
     <p>©2018 四川慧威仕科技有限公司版权所有</p>
 </footer>
+<script type="text/javascript" charset="utf-8">
+    $(function() {
+        $("img.lazy").lazyload({effect: "fadeIn"});
+    });
+</script>
 </body>
 </html>

@@ -5,27 +5,28 @@
     <link rel="stylesheet" href="css/companypage.css">
     <link rel="stylesheet" href="css/companyproject.css">
     <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="js/jquery.lazyload.js"></script>
     <title>产业简介</title>
 </head>
 <body>
 <nav>
-    <img src="img/慧威仕logo.png">
+    <img class="lazy" data-original="img/慧威仕logo.png">
     <ul id="nav">
         <li><a href="companypage.html">首页</a></li>
         <li><a href="companyprofile.html">关于</a></li>
         <li><a href="companyproject.html">产业</a></li>
-        <li><a href="#">文化</a></li>
+        <li><a href="companycase.html">案例</a></li>
         <li><a href="companyjob.html">人才</a></li>
         <li><a href="companypage.html#cooperation">合作</a></li>
     </ul>
 </nav>
-<img src="img/project/projectbanner.png" style="width: 100%;min-width: 1200px;margin-top: -2px;display: block;vertical-align:top;">
+<img class="lazy" data-original="img/project/projectbanner.png" style="width: 100%;min-width: 1200px;margin-top: -2px;display: block;vertical-align:top;">
 <div id="internet" class="profile">
     <p style="font-size: 32px;font-family:'Microsoft YaHei';color: #233776;float: left;margin-left: 30px">互联网+</p>
     <p style="float: right;font-size: 16px;margin: 16px 30px 0 0;font-family:'Microsoft YaHei'"><a href="companypage.html"><span>首页</span></a><span>&gt</span><span>产业</span><span>&gt</span><span>项目介绍</span></p>
     <div class="clear"></div>
-    <img src="img/横线.png" style="display:block;margin-top: 28px;width: 100%;min-width: 1200px;height: 1px;background: #cccccc">
-    <img src="img/project/projectimg1.png" style="display:block;margin: 28px 0 0 30px;float: left;">
+    <img class="lazy" data-original="img/横线.png" style="display:block;margin-top: 28px;width: 100%;min-width: 1200px;height: 1px;background: #cccccc">
+    <img class="lazy" data-original="img/project/projectimg1.png" style="display:block;margin: 28px 0 0 30px;float: left;">
     <div class="clear"></div>
     <p class="company-text-profile"><span style="font-size: 22px;font-family:'Microsoft YaHei';color: #233776;">智慧菜市云平台</span><br>
         由四川慧威仕科技有限公司数十名互联网领域和食品检测领域资深人员历时3年，自主研发设计的针对农贸市场食品安全监管的大数据平台。
@@ -48,5 +49,10 @@
 <footer style="margin-top: 245px">
     <p>©2018 四川慧威仕科技有限公司版权所有</p>
 </footer>
+<script type="text/javascript" charset="utf-8">
+    $(function() {
+        $("img.lazy").lazyload({effect: "fadeIn"});
+    });
+</script>
 </body>
 </html>

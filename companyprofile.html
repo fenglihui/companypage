@@ -5,41 +5,44 @@
     <link rel="stylesheet" href="css/companypage.css">
     <link rel="stylesheet" href="css/companyprofile.css">
     <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="js/jquery.lazyload.js"></script>
     <title>公司简介</title>
 </head>
 <body>
 <nav>
-    <img src="img/慧威仕logo.png">
+    <img class="lazy" data-original="img/慧威仕logo.png">
     <ul id="nav">
         <li><a href="companypage.html">首页</a></li>
         <li><a href="companyprofile.html">关于</a></li>
         <li><a href="companypage.html#industry">产业</a></li>
-        <li><a href="#">文化</a></li>
+        <li><a href="companycase.html">案例</a></li>
         <li><a href="companyjob.html">人才</a></li>
         <li><a href="companypage.html#cooperation">合作</a></li>
     </ul>
 </nav>
-<img src="img/profile/profilebanner.png" style="width: 100%;min-width: 1200px;">
+<img class="lazy" data-original="img/profile/profilebanner.png" style="width: 100%;min-width: 1200px;">
 <div id="profile">
     <p style="font-size: 32px;font-family:'Microsoft YaHei';color: #233776;float: left;margin-left: 30px">公司简介</p>
     <p style="float: right;font-size: 16px;margin: 16px 30px 0 0;"><a href="companypage.html"><span>首页</span></a><span>&gt</span><span>关于我们</span><span>&gt</span><span>公司简介</span></p>
     <div class="clear"></div>
-    <img src="img/横线.png" style="display:block;margin-top: 28px;width: 100%;min-width: 1200px;height: 1px;background: #cccccc">
-    <img style="display: block;float: right;margin: 43px 30px 0 60px;" src="img/profile/图片介绍.png">
-    <p class="company-text-profile" style="margin-top: 43px">四川慧威仕科技有限公司成立于2015年，位于国家级高新技术产业开发区成都高新区。
-        公司秉承“产融结合、科技引领、人才汇聚、协同创新”的战略思想，集研发、生产、销售、服务于一体的现代服务，
-        集团公司旗下涉足多个领域，其中主要包括“科技服务”、“广告传媒”、“检测和计量”三大板块。</p>
-    <p class="company-text-profile"><span style="font-size: 22px;font-family:'Microsoft YaHei';color: #233776;">科技服务领域</span><br>
-        提供系统集成、软件开发服务、智慧设备研发等，公司核心团队先后参与了国内首家酒类RFID追溯平台的研发和运营、中国物流工业4.0供应链管理系统设计。</p>
-    <p class="company-text-profile" style="margin:120px 30px 0 30px"><span style="font-size: 22px;font-family:'Microsoft YaHei';color: #233776;">广告传媒领域</span><br>
-        聚合平面广告、新媒体、电视媒体、明星资源等多种广告服务形式，团队先后策划运营《CCTV食品产业报道》栏目，
-        拍摄制作茅台集团大型电视纪录片《匠心·匠韵》、潭酒集团专题片、宣传片，与CCTV-AAAA级代理公司及国内时尚大牌杂志《玩趣天下》保持良好的合作关系，
-        目前正在紧锣密鼓的筹备泸州白酒小镇的品牌宣传和邛崃天台山、平乐古镇的景区宣传，以及正在全方位打造国内首家以食安为主题的专业全媒体矩阵平台《慧食中国》。</p>
-    <p class="company-text-profile" style="margin-right:30px"><span style="font-size: 22px;font-family:'Microsoft YaHei';color: #233776;">检测及计量领域</span><br>
-        参股合作多家国内检测机构，能提供食品检测、环境检测以及快速检测等服务。其中公司基于国家“一带一路”战略，设立慧威仕科技集团（老挝）有限公司，与老挝国家科技部联合投资运营“中国-老挝国家计量项目”。</p>
+    <img class="lazy" data-original="img/横线.png" style="display:block;margin-top: 28px;width: 100%;min-width: 1200px;height: 1px;background: #cccccc">
+    <img style="width:410px;height:280px;display: block;float: right;margin: 43px 30px 0 60px;" src="img/profile/图片介绍.png">
+    <p class="company-text-profile" >四川慧威仕科技有限公司成立于2015年，位于国家级高新技术产业开发区成都高新区。是一家集研发、生产、销售及技术服务为一体的现代化服务型企业，致力构建现代企业服务生态链，公司秉承“产融结合、科技引领、人才汇聚、协同创新”的战略思想，公司旗下涉足多个领域，其中包括“科技服务”、“广告传媒”、“检测与计量”。</p>
+    <p class="company-text-profile" >公司拥有行业服务丰富的技术和社会资源，我们立足于技术人才高地，经过3年时间深耕细作，为若干行业领军或品牌企业服务，随着国家一带一路发展战略不断加快，投资设立慧威仕科技（老挝）有限公司，并与老挝国家科技部计量司联合共建运营“中老国家衡器所”项目。</p>
+    <p class="company-text-profile" >公司目前正处于快速发展阶段，即将逐步形成大行业、多专业的综合性服务格局。</p>
+    <p class="company-text-profile" ><span class="company-profile-title">企业口号&nbsp&nbsp&nbsp&nbsp诚信 专业 服务</span></p>
+    <p class="company-text-profile" ><span class="company-profile-title">企业使命&nbsp&nbsp&nbsp&nbsp构建现代企业服务生态链</span></p>
+    <p class="company-text-profile" ><span class="company-profile-title">经营理念&nbsp&nbsp&nbsp&nbsp客户第一、与时俱进、合作共赢</span></p>
+    <p class="company-text-profile" ><span class="company-profile-title">企业文化&nbsp&nbsp&nbsp&nbsp以人为本，发挥人的主观能动性，实现人与企业共兴共荣</span></p>
+</span></p>
 </div>
 <footer style="margin-top: 245px">
     <p>©2018 四川慧威仕科技有限公司版权所有</p>
 </footer>
+<script type="text/javascript" charset="utf-8">
+    $(function() {
+        $("img.lazy").lazyload({effect: "fadeIn"});
+    });
+</script>
 </body>
 </html>

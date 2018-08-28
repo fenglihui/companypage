@@ -1,0 +1,57 @@
+.style{
+    width: 100%;
+    margin-top: 30px;
+}
+.case-title{
+    font-family: "Microsoft YaHei";
+    font-size: 28px;
+    color: #233776;
+    margin-left: 30px;
+    font-weight: bold;
+}
+.case-title-left{
+    margin: 30px 0 20px 0;
+    font-family: "Microsoft YaHei";
+    font-size: 24px;
+    color: #233776;
+}
+.case-title-right{
+    margin: 30px 0 20px 0;
+    font-family: "Microsoft YaHei";
+    font-size: 24px;
+    color: #233776;
+    text-align: left;
+}
+.case-text-left{
+    font-family: "Microsoft YaHei";
+    font-size: 18px;
+    color: #000000;
+    margin: 20px 0 0 0;
+    text-align: left;
+    line-height: 1.7;
+}
+.case-text-right{
+    font-family: "Microsoft YaHei";
+    font-size: 18px;
+    color: #000000;
+    margin: 10px 0;
+    text-align: left;
+    line-height: 1.7;
+}
+.img-right{
+    margin: 50px 0 0 30px;
+    float: right;
+    width: 400px;
+    height: 250px;
+    display: block;
+}
+.img-left{
+    margin: 30px 20px 0 0;
+    width: 360px;
+    height: 250px;
+    display: block;
+    float: left;
+}
+.left-case,.right-case{
+    margin: 30px;
+}
